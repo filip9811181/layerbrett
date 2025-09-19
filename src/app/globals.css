@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@font-face {
+  font-family: "Get Schwifty";
+  src: url("../../public/fonts/get_schwifty.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "koulen";
+  src: url("../../public/fonts/Koulen-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.koulen {
+  font-family: "koulen", sans-serif;
+
+}
+
+.overlays {
+
+  width: 100%;
+  background-color: #A2CB00;
+  backdrop-filter: blur(99.7px);
+  -webkit-backdrop-filter: blur(99.7px);
+  /* For Safari */
+  opacity: 0.6;
+  /* Adjust transparency if needed */
+  pointer-events: none;
+  /* So it doesn't block clicks */
+}
+
+
+.shadowText {
+  color: #00334e;
+  /* main text color */
+  text-shadow:
+    3px 3px 0 #D6FF00,
+    -3px 3px 0 #D6FF00,
+    3px -3px 0 #D6FF00,
+    -3px -3px 0 #D6FF00;
+}
+
+.schwifty {
+  font-family: "Get Schwifty", cursive;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+  background: linear-gradient(180deg, #143153 0%, #11284A 76.41%);
+
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px #D6FF00;
+  /* Change stroke width and color as needed */
+  color: transparent;
+  /* Makes the fill transparent */
+}
+
+.stroked-text {
+  color: #0487AB;
+  /* inner text color */
+  -webkit-text-stroke: 2px #D6FF00;
+  /* border/stroke color */
+  text-stroke: 2px #D6FF00;
+  /* fallback for some browsers */
+  font-family: "Get Schwifty", cursive;
+
+}
+
+.stroked2 {
+  color: #003E57;
+  /* inner text color */
+  -webkit-text-stroke: 1px #D6FF00;
+  /* border/stroke color */
+  text-stroke: 1px #D6FF00;
+  font-family: "koulen", sans-serif;
+
+
+}
+
+.stroked3 {
+  color: #0487AB;
+  /* inner text color */
+  -webkit-text-stroke: 4px #D6FF00;
+  /* border/stroke color */
+  text-stroke: 4px #D6FF00;
+
+
+}
+
+/* Hide arrows in Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide arrows in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.rfm-marquee {
+  min-width: auto !important;
+  /* margin-right: 54px !important; */
+}
+
+.custom-text {
+
+  font-size: 32.23px;
+  font-weight: 900;
+  color: white;
+  /* text fill color */
+  -webkit-text-stroke: 2px #003E57;
+  /* stroke width and color */
+  text-stroke: 2px #003E57;
+  /* for other browsers */
+
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, and Opera */
+}
+
+.borderShadow {
+  /* Dark teal outline effect */
+  text-shadow:
+    -3px -3px 0 #003E57,
+    3px -3px 0 #003E57,
+    -3px 3px 0 #003E57,
+    3px 3px 0 #003E57,
+    -3px 0 0 #003E57,
+    3px 0 0 #003E57,
+    0 -3px 0 #003E57,
+    0 3px 0 #003E57;
+
+}
